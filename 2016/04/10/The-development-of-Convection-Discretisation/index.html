@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="CFD," />
+  <meta name="keywords" content="CFD,Convective Flux," />
 
 
 
@@ -84,37 +84,25 @@
 
 
 
-<meta name="description" content="目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，目标达成。
+<meta name="description" content="The Development of Convection Discretisation
+Stage 1
 
-写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
-
-软件简介1. RotorAS-3D
-2016.6 完成，全速域3D版本，最终代码量2万行左右。包含以下功能：
-
-前处理-结构网格生成、非结构网格生成以及混合网格生成 结构网格">
+According 2-order accurate FVM, the consistent convection discretisation scheme - 2-order central scheme is a suitable choice.However, when combin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="研究生阶段工作总结">
-<meta property="og:url" content="http://yoursite.com/2016/11/20/研究生阶段工作介绍/index.html">
+<meta property="og:title" content="The Development of Convection Discretisation">
+<meta property="og:url" content="http://yoursite.com/2016/04/10/The-development-of-Convection-Discretisation/index.html">
 <meta property="og:site_name" content="航哥的小站">
-<meta property="og:description" content="目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，目标达成。
+<meta property="og:description" content="The Development of Convection Discretisation
+Stage 1
 
-写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
-
-软件简介1. RotorAS-3D
-2016.6 完成，全速域3D版本，最终代码量2万行左右。包含以下功能：
-
-前处理-结构网格生成、非结构网格生成以及混合网格生成 结构网格">
-<meta property="og:updated_time" content="2016-11-20T12:08:55.025Z">
+According 2-order accurate FVM, the consistent convection discretisation scheme - 2-order central scheme is a suitable choice.However, when combin">
+<meta property="og:updated_time" content="2016-11-20T13:54:06.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="研究生阶段工作总结">
-<meta name="twitter:description" content="目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，目标达成。
+<meta name="twitter:title" content="The Development of Convection Discretisation">
+<meta name="twitter:description" content="The Development of Convection Discretisation
+Stage 1
 
-写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
-
-软件简介1. RotorAS-3D
-2016.6 完成，全速域3D版本，最终代码量2万行左右。包含以下功能：
-
-前处理-结构网格生成、非结构网格生成以及混合网格生成 结构网格">
+According 2-order accurate FVM, the consistent convection discretisation scheme - 2-order central scheme is a suitable choice.However, when combin">
 
 
 
@@ -142,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/20/研究生阶段工作介绍/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/04/10/The-development-of-Convection-Discretisation/"/>
 
 
 
 
 
-  <title> 研究生阶段工作总结 | 航哥的小站 </title>
+  <title> The Development of Convection Discretisation | 航哥的小站 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +267,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/20/研究生阶段工作介绍/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/10/The-development-of-Convection-Discretisation/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="szhang">
@@ -303,7 +291,7 @@
             
             
               
-                研究生阶段工作总结
+                The Development of Convection Discretisation
               
             
           </h1>
@@ -316,8 +304,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-20T16:44:43+08:00">
-                2016-11-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-10T21:27:21+08:00">
+                2016-04-10
               </time>
             
 
@@ -335,8 +323,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/大学/" itemprop="url" rel="index">
-                    <span itemprop="name">大学</span>
+                  <a href="/categories/CFD/" itemprop="url" rel="index">
+                    <span itemprop="name">CFD</span>
                   </a>
                 </span>
 
@@ -370,39 +358,58 @@
       
 
       
-        <blockquote class="blockquote-center"><strong>目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件</strong><br>2016年6月1日 儿童节  与师弟合作下，目标达成。</blockquote>
-
-<p>写了个软件，目前还在读研，还没法开源。<br>专栏：<a href="https://zhuanlan.zhihu.com/solver" target="_blank" rel="external">流场求解器初探</a><br>交流学习：hangzs@nuaa.edu.cn </p>
-<hr>
-<h4 id="软件简介"><a href="#软件简介" class="headerlink" title="软件简介"></a>软件简介</h4><h5 id="1-RotorAS-3D"><a href="#1-RotorAS-3D" class="headerlink" title="1. RotorAS-3D"></a>1. <code>RotorAS-3D</code></h5><blockquote>
-<p>2016.6 完成，全速域3D版本，最终代码量2万行左右。<br>包含以下功能：</p>
+        <h3 id="The-Development-of-Convection-Discretisation"><a href="#The-Development-of-Convection-Discretisation" class="headerlink" title="The Development of Convection Discretisation"></a>The Development of Convection Discretisation</h3><hr>
+<h4 id="Stage-1"><a href="#Stage-1" class="headerlink" title="Stage 1"></a>Stage 1</h4><blockquote>
 <ol>
-<li>前处理-结构网格生成、非结构网格生成以及混合网格生成<br> 结构网格：代数法法向推进，泊松方程光顺；非结构网格：阵面推进法</li>
-<li>求解器—基于密度，可用于全速域流场求解计算<br> 空间离散：JST、Roe格式；时间离散：统一采用双时间步法，隐式推进；离散方程组求解方法：LU-SGS<br> 湍流模型：SA 和 k-omg SST<br> 不可压缩计算采用预处理技术，动态计算采用非结构网格的嵌套网格技术和动网格技术</li>
-<li>后处理——模拟数据处理与可视化</li>
-<li>GUI设设计</li>
+<li>According 2-order accurate FVM, the consistent convection discretisation scheme - 2-order central scheme is a suitable choice.<br>However, when combined with explicit temporal discretisation, this scheme is unconditionally unstable.</li>
+<li>1-order accurate scheme, such as Upwind Scheme, is adopted in order to achieve stability.<br>However, this scheme overcomes aformentioned problem by introduing massive diffusion.Namely, it reduces the accuracy.</li>
 </ol>
 </blockquote>
-<h5 id="2-RotorAS-2D"><a href="#2-RotorAS-2D" class="headerlink" title="2. RotorAS-2D"></a>2. RotorAS-2D</h5><blockquote>
-<p>20.16.2 完成，全速域2D版本。</p>
+<ul>
+<li><strong>Summary: 1 and 2 is about how to achieve stability and accuracy simultaneously.</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-2"><a href="#Stage-2" class="headerlink" title="Stage 2"></a>Stage 2</h4><blockquote>
+<p> Lax-Wendroff family schemes are proposed. 2-order accuracy and stability are achieved by combing spatial and temporal discretisation.<br>However, in the case of steay-state calculation, these schemes introduce an unrealistic dependence of the solution on the time-step.</p>
 </blockquote>
-<h5 id="3-RotorC-2D"><a href="#3-RotorC-2D" class="headerlink" title="3.RotorC-2D"></a>3.RotorC-2D</h5><blockquote>
-<p>2016.2 完成，可压缩2D版本，功能比 RotorAS-2D版本弱一些，计算不可压由于特征值量级差异导致收敛困难</p>
+<ul>
+<li><strong>Summary: They can achieve stability and accuray at the same time, but they cause another problem ( I don’t understand).</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-3"><a href="#Stage-3" class="headerlink" title="Stage 3"></a>Stage 3</h4><blockquote>
+<p>A family of 2-order schemes with independent time integration are developed by Beam and Warming.<br>However, these schemes cause unphysical oscillations in the solution which severely reduce its quality. Outside of physically meaningful boundedness( unboundedness) is unacceptable.</p>
 </blockquote>
-<blockquote class="blockquote-center">软件开发者：孙振航 桑树浩<br>单位：旋翼动力学国家级重点实验室</blockquote>
-
-<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><h5 id="3D"><a href="#3D" class="headerlink" title="3D"></a>3D</h5><blockquote>
-<p><a href="http://v.youku.com/v_show/id_XMTc1NzQwNzQ1Mg==.html" target="_blank" rel="external">Adaptive Grid</a><br><a href="http://v.youku.com/v_show/id_XMTY0NzM1MDQyMA==.html" target="_blank" rel="external">The Curl Distribution in Rotor Wake</a></p>
+<ul>
+<li><strong>Summary: They achieves stability and accuracy all at once and they overcome the problem in 3, but they cause another problem - unboundedness.</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-4"><a href="#Stage-4" class="headerlink" title="Stage 4"></a>Stage 4</h4><blockquote>
+<ol>
+<li><p>4-order artificial dissipation is introduced to achieve boundedness.<br>However, it reduces the accuracy and it can’t guarantee boundedness.</p>
+</li>
+<li><p>A series of possible solutions are proposed to achive boundedness and accuracy. Famous schemes are upwind-biased schemes, switching schemes and blending schemes.<br>However, they can only conditionly guarantee accuray and boundedness.</p>
+</li>
+</ol>
 </blockquote>
-<h5 id="2D"><a href="#2D" class="headerlink" title="2D"></a>2D</h5><blockquote>
-<p><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzQ5Mg==.html" target="_blank" rel="external">Pressure Distribution of Dynamic Stall in Reverse Flow</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzgyNA==.html" target="_blank" rel="external">Wake Vortex Street after Aerodynamic Trailing Edge</a></p>
+<ul>
+<li><strong>Summary: 5 and 6 can’t guarantee accuracy and boundedness simultaneously and completely.</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-5"><a href="#Stage-5" class="headerlink" title="Stage 5"></a>Stage 5</h4><blockquote>
+<p>Flux-limiting schemes arise. They are classied as “shock-capturing schemes”, eventually relulting in TVD schemes. These schemes struct a flux-limiter which is dependent on local flow properties, thus introducing a non-linear dependence of the solution.One of the main conclusions of the TVD analysis is that a scheme has to be non-linear in order to be bounded and more than 1-order accurate.<br>Howerver, though these schemes behave well at sharp profiles, they are still too diffusive for smooth profiles. And they may cause problem-convergence.</p>
 </blockquote>
-<h5 id="Grid-generation"><a href="#Grid-generation" class="headerlink" title="Grid generation"></a>Grid generation</h5><blockquote>
-<p><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDUzMg==.html" target="_blank" rel="external">Structured Grid Generation around NACA0012</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDc2OA==.html" target="_blank" rel="external">Unstructured Grid Generation outside Structured Grid</a></p>
+<ul>
+<li><strong>Summary: TVD schems offer reasonably good accuracy and at the same time guarantee boundedness, but accuray can be improved for smooth profiles.</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-6"><a href="#Stage-6" class="headerlink" title="Stage 6"></a>Stage 6</h4><blockquote>
+<p>In order to develop a scheme which can behave well both for sharp and smooth profiles, the Normalised Variable Approach (NVA) is introduced.<br>However, it can’t guarantee any convergence.</p>
 </blockquote>
-<h5 id="Download-试用"><a href="#Download-试用" class="headerlink" title="Download(试用)"></a>Download(试用)</h5><blockquote>
-<p>3D-version: <a href="https://github.com/hangsz/RotorAS-3D" target="_blank" rel="external">RotorAS-3D</a><br>2D-version: <a href="https://github.com/hangsz/RotorAS-2D" target="_blank" rel="external">RotorAS-2D</a></p>
-</blockquote>
+<ul>
+<li><strong>Summary: Good accuray and boundedness are achieved at the expense of convergence.</strong></li>
+</ul>
+<hr>
+<h4 id="Stage-7"><a href="#Stage-7" class="headerlink" title="Stage 7"></a>Stage 7</h4><p><strong>……Now, it’s you turn to contribute.</strong></p>
 
       
     </div>
@@ -428,6 +435,8 @@
           
             <a href="/tags/CFD/" rel="tag"># CFD</a>
           
+            <a href="/tags/Convective-Flux/" rel="tag"># Convective Flux</a>
+          
         </div>
       
 
@@ -435,8 +444,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/15/数学上激波和稀疏波的区别/" rel="next" title="数学上激波和稀疏波的区别">
-                <i class="fa fa-chevron-left"></i> 数学上激波和稀疏波的区别
+              <a href="/2016/03/26/win下配置OpenGL环境（sb6）/" rel="next" title="win下配置OpenGL环境（sb6）">
+                <i class="fa fa-chevron-left"></i> win下配置OpenGL环境（sb6）
               </a>
             
           </div>
@@ -444,6 +453,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/15/数学上激波和稀疏波的区别/" rel="prev" title="数学上激波和稀疏波的区别">
+                数学上激波和稀疏波的区别 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -611,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#软件简介"><span class="nav-number">1.</span> <span class="nav-text">软件简介</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-RotorAS-3D"><span class="nav-number">1.1.</span> <span class="nav-text">1. RotorAS-3D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-RotorAS-2D"><span class="nav-number">1.2.</span> <span class="nav-text">2. RotorAS-2D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-RotorC-2D"><span class="nav-number">1.3.</span> <span class="nav-text">3.RotorC-2D</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3D"><span class="nav-number">2.1.</span> <span class="nav-text">3D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2D"><span class="nav-number">2.2.</span> <span class="nav-text">2D</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Grid-generation"><span class="nav-number">2.3.</span> <span class="nav-text">Grid generation</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Download-试用"><span class="nav-number">2.4.</span> <span class="nav-text">Download(试用)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Development-of-Convection-Discretisation"><span class="nav-number">1.</span> <span class="nav-text">The Development of Convection Discretisation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-1"><span class="nav-number">1.1.</span> <span class="nav-text">Stage 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-2"><span class="nav-number">1.2.</span> <span class="nav-text">Stage 2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-3"><span class="nav-number">1.3.</span> <span class="nav-text">Stage 3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-4"><span class="nav-number">1.4.</span> <span class="nav-text">Stage 4</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-5"><span class="nav-number">1.5.</span> <span class="nav-text">Stage 5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-6"><span class="nav-number">1.6.</span> <span class="nav-text">Stage 6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stage-7"><span class="nav-number">1.7.</span> <span class="nav-text">Stage 7</span></a></li></ol></li></ol></div>
             
 
           </div>
