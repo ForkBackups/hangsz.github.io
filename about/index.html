@@ -85,21 +85,27 @@
 
 
 <meta name="description" content="终极目标：希望参与设计一款属于中国的开源CFD软件阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。
-写了个软件，目前还在读研，还没法开源。知乎专栏：流场求解器初探
-交流学习：hangzs@nuaa.edu.cn 软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)最终代码量 2万">
+写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
+
+软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)
+最终代码量 2万">
 <meta property="og:type" content="website">
 <meta property="og:title" content="我的工作">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="CFD之旅">
 <meta property="og:description" content="终极目标：希望参与设计一款属于中国的开源CFD软件阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。
-写了个软件，目前还在读研，还没法开源。知乎专栏：流场求解器初探
-交流学习：hangzs@nuaa.edu.cn 软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)最终代码量 2万">
-<meta property="og:updated_time" content="2016-11-19T12:29:37.240Z">
+写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
+
+软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)
+最终代码量 2万">
+<meta property="og:updated_time" content="2016-11-20T03:25:21.581Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的工作">
 <meta name="twitter:description" content="终极目标：希望参与设计一款属于中国的开源CFD软件阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。
-写了个软件，目前还在读研，还没法开源。知乎专栏：流场求解器初探
-交流学习：hangzs@nuaa.edu.cn 软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)最终代码量 2万">
+写了个软件，目前还在读研，还没法开源。专栏：流场求解器初探交流学习：hangzs@nuaa.edu.cn 
+
+软件简介：1. (2016.6 Finished) RotorAS-3D (All Speed)
+最终代码量 2万">
 
 
 
@@ -261,24 +267,46 @@
 
     
     
-      <h2 id="终极目标：希望参与设计一款属于中国的开源CFD软件"><a href="#终极目标：希望参与设计一款属于中国的开源CFD软件" class="headerlink" title="终极目标：希望参与设计一款属于中国的开源CFD软件"></a>终极目标：希望参与设计一款属于中国的开源CFD软件</h2><h4 id="阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件"><a href="#阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件" class="headerlink" title="阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件"></a>阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件</h4><h4 id="2016年6月1日-儿童节-与师弟合作下，阶段目标已经达成。"><a href="#2016年6月1日-儿童节-与师弟合作下，阶段目标已经达成。" class="headerlink" title="2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。"></a>2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。</h4><hr>
-<p>写了个软件，目前还在读研，还没法开源。<br>知乎专栏：<strong><a href="https://zhuanlan.zhihu.com/solver" target="_blank" rel="external">流场求解器初探</a></strong></p>
-<h2 id="交流学习：hangzs-nuaa-edu-cn"><a href="#交流学习：hangzs-nuaa-edu-cn" class="headerlink" title="交流学习：hangzs@nuaa.edu.cn "></a>交流学习：hangzs@nuaa.edu.cn </h2><h4 id="软件简介："><a href="#软件简介：" class="headerlink" title="软件简介："></a>软件简介：</h4><h5 id="1-2016-6-Finished-RotorAS-3D-All-Speed"><a href="#1-2016-6-Finished-RotorAS-3D-All-Speed" class="headerlink" title="1. (2016.6 Finished) RotorAS-3D (All Speed)"></a>1. (2016.6 Finished) <code>RotorAS-3D</code> (All Speed)</h5><pre><code>最终代码量 2万行左右
-包含以下功能：
-    · 前处理-结构网格生成、非结构网格生成以及混合网格生成
-            -结构网格：代数法法向推进，泊松方程光顺；非结构网格：阵面推进法
-    · 求解器—基于密度，可用于全速域流场求解计算
-            -空间离散：JST、Roe格式；时间离散：统一采用双时间步法，隐式推进；离散方程组求解方法：LU-SGS
-            -湍流模型：SA 和 k-omg SST
-            -不可压缩计算采用预处理技术，动态计算采用非结构网格的嵌套网格技术和动网格技术
-    · 后处理——模拟数据处理与可视化
-    · GUI设计
-</code></pre><h5 id="2-2016-2-Finished-RotorAS-2D-All-Speed"><a href="#2-2016-2-Finished-RotorAS-2D-All-Speed" class="headerlink" title="2. (2016.2 Finished) RotorAS-2D (All Speed)"></a>2. (2016.2 Finished) RotorAS-2D (All Speed)</h5><pre><code>2D版本
-</code></pre><h5 id="3-2016-2-Finished-RotorC-2D-Compressible"><a href="#3-2016-2-Finished-RotorC-2D-Compressible" class="headerlink" title="3. (2016.2 Finished) RotorC-2D (Compressible)"></a>3. (2016.2 Finished) RotorC-2D (Compressible)</h5><pre><code>功能比 RotorAS-2D版本弱一些，计算不可压由于特征值量级差异导致收敛困难
-</code></pre><hr>
-<p><code>软件开发者：孙振航 桑树浩</code><br>单位：直升机旋翼动力学国家级重点实验室</p>
+      <h3 id="终极目标：希望参与设计一款属于中国的开源CFD软件"><a href="#终极目标：希望参与设计一款属于中国的开源CFD软件" class="headerlink" title="终极目标：希望参与设计一款属于中国的开源CFD软件"></a>终极目标：希望参与设计一款属于中国的开源CFD软件</h3><h3 id="阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件"><a href="#阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件" class="headerlink" title="阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件"></a>阶段目标：写出能用于旋翼（Rotor）飞行器流体模拟计算的软件</h3><h6 id="2016年6月1日-儿童节-与师弟合作下，阶段目标已经达成。"><a href="#2016年6月1日-儿童节-与师弟合作下，阶段目标已经达成。" class="headerlink" title="2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。"></a>2016年6月1日 儿童节  与师弟合作下，阶段目标已经达成。</h6><hr>
+<p>写了个软件，目前还在读研，还没法开源。<br>专栏：<strong><a href="https://zhuanlan.zhihu.com/solver" target="_blank" rel="external">流场求解器初探</a></strong><br>交流学习：hangzs@nuaa.edu.cn </p>
 <hr>
-<h5 id="Demo："><a href="#Demo：" class="headerlink" title="Demo："></a>Demo：</h5><p><strong>3D</strong><br><a href="http://v.youku.com/v_show/id_XMTc1NzQwNzQ1Mg==.html" target="_blank" rel="external">Adaptive Grid</a><br><a href="http://v.youku.com/v_show/id_XMTY0NzM1MDQyMA==.html" target="_blank" rel="external">The Curl Distribution in Rotor Wake</a><br><strong>2D</strong><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzQ5Mg==.html" target="_blank" rel="external">Pressure Distribution of Dynamic Stall in Reverse Flow</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzgyNA==.html" target="_blank" rel="external">Wake Vortex Street after Aerodynamic Trailing Edge</a><br><strong>Grid generation</strong><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDUzMg==.html" target="_blank" rel="external">Structured Grid Generation around NACA0012</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDc2OA==.html" target="_blank" rel="external">Unstructured Grid Generation outside Structured Grid</a><br><strong>Download</strong><br>3D-version: <a href="https://github.com/hangsz/RotorAS-3D" target="_blank" rel="external">RotorAS-3D</a><br>2D-version: <a href="https://github.com/hangsz/RotorAS-2D" target="_blank" rel="external">RotorAS-2D</a></p>
+<h4 id="软件简介："><a href="#软件简介：" class="headerlink" title="软件简介："></a>软件简介：</h4><h5 id="1-2016-6-Finished-RotorAS-3D-All-Speed"><a href="#1-2016-6-Finished-RotorAS-3D-All-Speed" class="headerlink" title="1. (2016.6 Finished) RotorAS-3D (All Speed)"></a>1. (2016.6 Finished) <code>RotorAS-3D</code> (All Speed)</h5><blockquote>
+<p>最终代码量 2万行左右<br>    包含以下功能：</p>
+<ol>
+<li>前处理-结构网格生成、非结构网格生成以及混合网格生成<pre><code>-结构网格：代数法法向推进，泊松方程光顺；非结构网格：阵面推进法
+</code></pre></li>
+<li>求解器—基于密度，可用于全速域流场求解计算<pre><code>-空间离散：JST、Roe格式；时间离散：统一采用双时间步法，隐式推进；离散方程组求解方法：LU-SGS
+-湍流模型：SA 和 k-omg SST
+-不可压缩计算采用预处理技术，动态计算采用非结构网格的嵌套网格技术和动网格技术
+</code></pre></li>
+<li>后处理——模拟数据处理与可视化</li>
+<li>GUI设设计</li>
+</ol>
+</blockquote>
+<h5 id="2-2016-2-Finished-RotorAS-2D-All-Speed"><a href="#2-2016-2-Finished-RotorAS-2D-All-Speed" class="headerlink" title="2. (2016.2 Finished) RotorAS-2D (All Speed)"></a>2. (2016.2 Finished) RotorAS-2D (All Speed)</h5><blockquote>
+<p>2D版本</p>
+</blockquote>
+<h5 id="3-2016-2-Finished-RotorC-2D-Compressible"><a href="#3-2016-2-Finished-RotorC-2D-Compressible" class="headerlink" title="3. (2016.2 Finished) RotorC-2D (Compressible)"></a>3. (2016.2 Finished) RotorC-2D (Compressible)</h5><blockquote>
+<p>功能比 RotorAS-2D版本弱一些，计算不可压由于特征值量级差异导致收敛困难</p>
+</blockquote>
+<p><code>软件开发者：孙振航 桑树浩</code><br><code>单位：直升机旋翼动力学国家级重点实验室</code></p>
+<hr>
+<h5 id="Demo："><a href="#Demo：" class="headerlink" title="Demo："></a>Demo：</h5><p><strong>3D</strong></p>
+<blockquote>
+<p><a href="http://v.youku.com/v_show/id_XMTc1NzQwNzQ1Mg==.html" target="_blank" rel="external">Adaptive Grid</a><br><a href="http://v.youku.com/v_show/id_XMTY0NzM1MDQyMA==.html" target="_blank" rel="external">The Curl Distribution in Rotor Wake</a></p>
+</blockquote>
+<p><strong>2D</strong> </p>
+<blockquote>
+<p><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzQ5Mg==.html" target="_blank" rel="external">Pressure Distribution of Dynamic Stall in Reverse Flow</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0MzgyNA==.html" target="_blank" rel="external">Wake Vortex Street after Aerodynamic Trailing Edge</a></p>
+</blockquote>
+<p><strong>Grid generation</strong></p>
+<blockquote>
+<p><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDUzMg==.html" target="_blank" rel="external">Structured Grid Generation around NACA0012</a><br><a href="http://v.youku.com/v_show/id_XMTYxOTU0NDc2OA==.html" target="_blank" rel="external">Unstructured Grid Generation outside Structured Grid</a></p>
+</blockquote>
+<p><strong>Download</strong></p>
+<blockquote>
+<p>3D-version: <a href="https://github.com/hangsz/RotorAS-3D" target="_blank" rel="external">RotorAS-3D</a><br>2D-version: <a href="https://github.com/hangsz/RotorAS-2D" target="_blank" rel="external">RotorAS-2D</a></p>
+</blockquote>
 
     
   </div>
@@ -337,7 +365,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

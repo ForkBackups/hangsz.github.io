@@ -345,20 +345,26 @@
       
         
           
-            <h2 id="OpenGL-配置方法（先自行安装vs2013）："><a href="#OpenGL-配置方法（先自行安装vs2013）：" class="headerlink" title="OpenGL 配置方法（先自行安装vs2013）："></a>OpenGL 配置方法（先自行安装vs2013）：</h2><h4 id="glew下载1-7-0版本（win32-or-64）"><a href="#glew下载1-7-0版本（win32-or-64）" class="headerlink" title="glew下载1.7.0版本（win32 or 64）"></a><a href="https://sourceforge.net/projects/glew/files/glew/1.7.0/" target="_blank" rel="external">glew下载1.7.0版本</a>（win32 or 64）</h4><pre><code>将所有压缩包中 include 文件夹下的 .h 文件拷贝到 
-
-D:\Program Files\Microsoft Visual Studio 12.0\VC\include\GL目录中
-
-（若没有GL文件夹请自行创建，VS目录不一定相同）。
-
-将lib文件夹下的 .lib 文件拷贝到D:\Program Files\Microsoft Visual Studio 12.0\VC\lib中。
-
-将 bin 文件夹下的 .dll 文件拷贝到C:\Windows\System32目录（win32），或者C:\Windows\SysWOW64目录（win64）。
-</code></pre><h4 id="glut下载3-7版本"><a href="#glut下载3-7版本" class="headerlink" title="glut下载3.7版本"></a><a href="http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip" target="_blank" rel="external">glut下载3.7版本</a></h4><pre><code>glut文件夹下的 .h .lib 和.dll ，处理方法同上。
-</code></pre><h4 id="glfw-下载2-7-6版本"><a href="#glfw-下载2-7-6版本" class="headerlink" title="glfw 下载2.7.6版本"></a><a href="https://sourceforge.net/projects/glfw/files/glfw/2.7.6/" target="_blank" rel="external">glfw 下载2.7.6版本</a></h4><pre><code>只要将 include中的 .h 文件按照上述方法处理就可以了。
-</code></pre><hr>
-<p><strong>测试代码，在win32项目下运行：</strong></p>
-<figure class="highlight plain"><figcaption><span>Include the "sb6.h" header file</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">   #include &quot;sb6.h&quot;</div><div class="line">// Derive my_application from sb6::application</div><div class="line">class my_application : public sb6::application</div><div class="line">&#123;</div><div class="line">public:</div><div class="line"> // Our rendering function</div><div class="line">     void render(double currentTime)&#123;</div><div class="line">         // Simply clear the window with red</div><div class="line">         static const GLfloat red[] = &#123; 1.0f, 0.0f, 0.0f, 1.0f &#125;;</div><div class="line">         glClearBufferfv(GL_COLOR, 0, red);</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">// Our one and only instance of DECLARE_MAIN</div><div class="line">DECLARE_MAIN(my_application);&gt;</div></pre></td></tr></table></figure>
+            <p><strong>OpenGL 配置方法（先自行安装vs2013）</strong></p>
+<ol>
+<li><p><a href="https://sourceforge.net/projects/glew/files/glew/1.7.0/" target="_blank" rel="external">glew下载1.7.0版本</a>（win32 or 64）</p>
+<blockquote>
+<p>将所有压缩包中 include 文件夹下的 .h 文件拷贝到 D:\Program Files\Microsoft Visual Studio 12.0\VC\include\GL目录中（若没有GL文件夹请自行创建，VS目录不一定相同）。<br>将lib文件夹下的 .lib 文件拷贝到D:\Program Files\Microsoft Visual Studio 12.0\VC\lib中。<br>将 bin 文件夹下的 .dll 文件拷贝到C:\Windows\System32目录（win32），或者C:\Windows\SysWOW64目录（win64）。</p>
+</blockquote>
+</li>
+<li><p><a href="http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip" target="_blank" rel="external">glut下载3.7版本</a></p>
+<blockquote>
+<p>glut文件夹下的 .h .lib 和.dll ，处理方法同上。</p>
+</blockquote>
+</li>
+<li><p><a href="https://sourceforge.net/projects/glfw/files/glfw/2.7.6/" target="_blank" rel="external">glfw 下载2.7.6版本</a></p>
+<blockquote>
+<p>只要将 include中的 .h 文件按照上述方法处理就可以了。</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<p><strong>测试代码，在win32项目下运行</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Include the "sb6.h" header file</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sb6.h"</span></span></div><div class="line"><span class="comment">// Derive my_application from sb6::application</span></div><div class="line"><span class="keyword">class</span> my_application : <span class="keyword">public</span> sb6::application&#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="comment">// Our rendering function</span></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">render</span><span class="params">(<span class="keyword">double</span> currentTime)</span></span>&#123;</div><div class="line">        <span class="comment">// Simply clear the window with red</span></div><div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> GLfloat red[] = &#123; <span class="number">1.0f</span>, <span class="number">0.0f</span>, <span class="number">0.0f</span>, <span class="number">1.0f</span> &#125;;</div><div class="line">        glClearBufferfv(GL_COLOR, <span class="number">0</span>, red);</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// Our one and only instance of DECLARE_MAIN</span></div><div class="line">DECLARE_MAIN(my_application);</div></pre></td></tr></table></figure></p>
 <p><a href="https://github.com/openglsuperbible/sb6code" target="_blank" rel="external">sb6下载</a> ，解压后可以看到其是vs2013上的的一个解决方案，可以直接运行。</p>
 <p>OpenGL Superbible 书上每个例子的实现：<a href="https://github.com/hangsz/OpenGL-Superbible-6th-Practices" target="_blank" rel="external">OpenGL-Superbible-6th-Practices</a></p>
 
@@ -448,7 +454,7 @@ D:\Program Files\Microsoft Visual Studio 12.0\VC\include\GL目录中
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
