@@ -102,7 +102,7 @@ OpenGL 配置方法（先自行安装vs2013）1. glew
 
 将所有压缩包中 include 文件夹下的 .h 文件拷贝到 D:\Program Files\Microsoft Visual Studio 12.0\VC\include\GL目录中（若没有GL文件夹请自行创建，VS目录不一定相同）。
 将l">
-<meta property="og:updated_time" content="2016-11-21T12:53:28.798Z">
+<meta property="og:updated_time" content="2016-11-21T12:57:26.283Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="win下配置OpenGL环境（sb6）">
 <meta name="twitter:description" content="文章为博主原创，转载请注明出处。   
@@ -398,6 +398,8 @@ OpenGL 配置方法（先自行安装vs2013）1. glew
 <h4 id="配置测试，在win32项目下运行"><a href="#配置测试，在win32项目下运行" class="headerlink" title="配置测试，在win32项目下运行"></a>配置测试，在win32项目下运行</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Include the "sb6.h" header file</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sb6.h"</span></span></div><div class="line"><span class="comment">// Derive my_application from sb6::application</span></div><div class="line"><span class="keyword">class</span> my_application : <span class="keyword">public</span> sb6::application&#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="comment">// Our rendering function</span></div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">render</span><span class="params">(<span class="keyword">double</span> currentTime)</span></span>&#123;</div><div class="line">        <span class="comment">// Simply clear the window with red</span></div><div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> GLfloat red[] = &#123; <span class="number">1.0f</span>, <span class="number">0.0f</span>, <span class="number">0.0f</span>, <span class="number">1.0f</span> &#125;;</div><div class="line">        glClearBufferfv(GL_COLOR, <span class="number">0</span>, red);</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// Our one and only instance of DECLARE_MAIN</span></div><div class="line">DECLARE_MAIN(my_application);</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/openglsuperbible/sb6code" target="_blank" rel="external">sb6下载</a> ，解压后可以看到其是vs2013上的的一个解决方案，可以直接运行。</p>
 <p>OpenGL Superbible 学习的时候做的几个书上例子：<a href="https://github.com/hangsz/OpenGL-Superbible-6th-Practices" target="_blank" rel="external">OpenGL-Superbible-6th-Practices</a></p>
+<blockquote class="blockquote-center"><p>做了点微小的工作，谢谢大家。   </p>
+</blockquote>
 
       
     </div>
