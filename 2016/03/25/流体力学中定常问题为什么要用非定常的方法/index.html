@@ -84,28 +84,31 @@
 
 
 
-<meta name="description" content="文章为博主原创，转载请注明出处。   
+<meta name="description" content="版权声明：文章为博主原创，转载请注明出处。  
 
 貌似大家都在讨论NS方程是什么类型，数值求解需要用什么格式，但是系统的分类很少见。今天我就来给流体力学方程来分个类，讲清楚为什么要采用非定常方法。
+
 数学基础
-二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partial x_{">
+二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="流体力学中定常问题为什么要用非定常的方法">
 <meta property="og:url" content="http://yoursite.com/2016/03/25/流体力学中定常问题为什么要用非定常的方法/index.html">
 <meta property="og:site_name" content="航哥的小站">
-<meta property="og:description" content="文章为博主原创，转载请注明出处。   
+<meta property="og:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
 貌似大家都在讨论NS方程是什么类型，数值求解需要用什么格式，但是系统的分类很少见。今天我就来给流体力学方程来分个类，讲清楚为什么要采用非定常方法。
+
 数学基础
-二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partial x_{">
-<meta property="og:updated_time" content="2016-11-21T14:38:24.727Z">
+二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partia">
+<meta property="og:updated_time" content="2016-11-21T15:14:06.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流体力学中定常问题为什么要用非定常的方法">
-<meta name="twitter:description" content="文章为博主原创，转载请注明出处。   
+<meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
 貌似大家都在讨论NS方程是什么类型，数值求解需要用什么格式，但是系统的分类很少见。今天我就来给流体力学方程来分个类，讲清楚为什么要采用非定常方法。
+
 数学基础
-二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partial x_{">
+二阶偏微分方程：$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partia">
 
 
 
@@ -207,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            专题
           </a>
         </li>
       
@@ -306,14 +309,24 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">发表于</span>
+              <span class="post-meta-item-text">发表：</span>
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-25T19:16:54+08:00">
                 2016-03-25
               </time>
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              <span class="post-meta-item-text">更新：</span>
+              <time title="更新：" itemprop="dateModified" datetime="2016-11-21T23:14:06+08:00">
+                2016-11-21
+              </time>
             
           </span>
 
@@ -324,7 +337,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">专题：</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/CFD/" itemprop="url" rel="index">
@@ -351,7 +364,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">阅读次数： </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -371,9 +384,10 @@
       
 
       
-        <blockquote class="blockquote-center"><p>文章为博主原创，转载请注明出处。   </p>
+        <blockquote class="blockquote-center"><p>版权声明：文章为博主原创，转载请注明出处。  </p>
 </blockquote>
 <p>貌似大家都在讨论NS方程是什么类型，数值求解需要用什么格式，但是系统的分类很少见。<br>今天我就来给流体力学方程来分个类，讲清楚为什么要采用非定常方法。</p>
+<hr>
 <h3 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h3><ul>
 <li>二阶偏微分方程：<br>$$ \sum_{j=1}^{N}\sum_{k=1}^{N}A_{jk} \frac{\partial ^{2}\phi  }{\partial x_{j} \partial x_{k}   } +H=0 $$</li>
 <li><p>特征多项式：<br>$$ det(A_{jk} -\lambda I)=0 $$</p>
@@ -389,7 +403,7 @@
 </li>
 </ul>
 <hr>
-<h3 id="物理方程归类"><a href="#物理方程归类" class="headerlink" title="物理方程归类"></a>物理方程归类</h3><p>二阶偏微分方程控制的物理问题，可以分为两类：</p>
+<h3 id="二阶PDE方程归类"><a href="#二阶PDE方程归类" class="headerlink" title="二阶PDE方程归类"></a>二阶PDE方程归类</h3><p>二阶偏微分方程控制的物理问题，可以分为两类：</p>
 <blockquote>
 <ol>
 <li>平衡问题——椭圆形方程</li>
@@ -435,12 +449,12 @@
 <h3 id="NS方程归类"><a href="#NS方程归类" class="headerlink" title="NS方程归类"></a>NS方程归类</h3><p>粘性和热扩散都考虑。</p>
 <ol>
 <li>非定常：由于有了时间项，且有耗散，所以是抛物型。</li>
-<li>定常：要不要思考一下，区分一下超声速或者亚声速？<br>不需要，因为它是混合型。<br>至于NS方程为什么这样归类，你要问我为什么，我也不能说一句无可奉告，让你们不高兴。那我只能好好回答你了，答案是 我也不知道。<br>安德森给了一个解释： NS方程抛物型性质来自于速度和内能的时间导数，椭圆形性质来自于粘性，粘性提供了向上游反馈的机制。<br>至于粘性向上游反馈的机制，我是这样理解的：由于粘性的存在，所以流场中一定会有边界层，边界层亚声速区域压力波可以网往上游传播，提供椭圆型特性。</li>
+<li>定常：要不要思考一下，区分一下超声速或者亚声速？<br>不需要，因为它是混合型。至于NS方程为什么这样归类，你要问我为什么，我也不能说一句无可奉告，让你们不高兴。那我只能好好回答你了，答案是 我也不知道。<br>安德森给了一个解释：NS方程抛物型性质来自于速度和内能的时间导数，椭圆形性质来自于粘性，粘性提供了向上游反馈的机制。关于粘性向上游反馈的机制，我是这样理解的：由于粘性的存在，所以流场中一定会有边界层，边界层亚声速区域压力波可以网往上游传播，提供椭圆型特性。</li>
 </ol>
 <hr>
 <h3 id="大结"><a href="#大结" class="headerlink" title="大结"></a>大结</h3><ul>
 <li>首先明确不是一定要用非定常来求解，比如定常全部亚声速下Euler方程 就是椭圆型方程，可以用适合椭圆型方程的数值格式来求解，估计更简单。</li>
-<li>采用非定常方式来求解定常问题的一定属于： 亚声速和超声速混合的Euler方程 以及 定常NS方程。<h2 id="添加时间项，统一化为-发展型-问题，这样构造适合全流场的数值格式简单省事。"><a href="#添加时间项，统一化为-发展型-问题，这样构造适合全流场的数值格式简单省事。" class="headerlink" title="添加时间项，统一化为 发展型 问题，这样构造适合全流场的数值格式简单省事。"></a>添加时间项，统一化为 发展型 问题，这样构造适合全流场的数值格式简单省事。</h2></li>
+<li>采用非定常方式来求解定常问题的一定属于： 亚声速和超声速混合的Euler方程 以及 定常NS方程。<br>添加时间项，统一化为 发展型 问题，这样构造适合全流场的数值格式简单省事。</li>
 </ul>
 <blockquote class="blockquote-center"><p>做了点微小的工作，谢谢大家。   </p>
 </blockquote>
@@ -565,7 +579,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">专题</span>
               </a>
             </div>
           
@@ -656,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数学基础"><span class="nav-number">1.</span> <span class="nav-text">数学基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物理方程归类"><span class="nav-number">2.</span> <span class="nav-text">物理方程归类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-平衡问题——大多数的定常问题"><span class="nav-number">2.1.</span> <span class="nav-text">1. 平衡问题——大多数的定常问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-发展问题——所有非定常问题，波动问题等"><span class="nav-number">2.2.</span> <span class="nav-text">2. 发展问题——所有非定常问题，波动问题等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-小结"><span class="nav-number">2.3.</span> <span class="nav-text">3. 小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Euler方程归类"><span class="nav-number">3.</span> <span class="nav-text">Euler方程归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NS方程归类"><span class="nav-number">4.</span> <span class="nav-text">NS方程归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大结"><span class="nav-number">5.</span> <span class="nav-text">大结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加时间项，统一化为-发展型-问题，这样构造适合全流场的数值格式简单省事。"><span class="nav-number"></span> <span class="nav-text">添加时间项，统一化为 发展型 问题，这样构造适合全流场的数值格式简单省事。</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数学基础"><span class="nav-number">1.</span> <span class="nav-text">数学基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二阶PDE方程归类"><span class="nav-number">2.</span> <span class="nav-text">二阶PDE方程归类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-平衡问题——大多数的定常问题"><span class="nav-number">2.1.</span> <span class="nav-text">1. 平衡问题——大多数的定常问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-发展问题——所有非定常问题，波动问题等"><span class="nav-number">2.2.</span> <span class="nav-text">2. 发展问题——所有非定常问题，波动问题等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-小结"><span class="nav-number">2.3.</span> <span class="nav-text">3. 小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Euler方程归类"><span class="nav-number">3.</span> <span class="nav-text">Euler方程归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NS方程归类"><span class="nav-number">4.</span> <span class="nav-text">NS方程归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大结"><span class="nav-number">5.</span> <span class="nav-text">大结</span></a></li></ol></div>
             
 
           </div>
