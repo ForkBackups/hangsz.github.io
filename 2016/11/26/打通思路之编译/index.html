@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="编译," />
 
 
 
@@ -86,44 +86,47 @@
 
 <meta name="description" content="版权声明：文章为博主原创，转载请注明出处。  
 
+高级语言写就的程序如何跑起来，编译器上的build命令其实干了四件事：
 
-差分格式构造步骤：
-确定基架点：根据这一点需要使用的点，根据计算量、精度确定。
-写成待定系数形式
-利用泰勒展开：把用到的每个点 都在要构造格式的那点进行泰勒展开。
-最好保留截断误差的主项，用于判定精度等。
+预处理 （文本文件-&amp;gt;文件文件）
+编译   （文本文件-&amp;gt;文本文件）
+汇编   （文本文件-&amp;gt;二进制文件）
+链接
 
+文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。二进制文件：编码格式自由的二进制文件。
 
-截断误差精度：一个格式的误差随着微量趋近于零，整体误差趋近于零的速度阶数。精度不能代表误差大小，因为误差前面还有系数。当网格间距趋近于零时">
+今天">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《计算流体力学-李新亮》笔记（3）-差分方法1-2">
-<meta property="og:url" content="http://yoursite.com/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/index.html">
+<meta property="og:title" content="打通思路之编译">
+<meta property="og:url" content="http://yoursite.com/2016/11/26/打通思路之编译/index.html">
 <meta property="og:site_name" content="航哥的小站">
 <meta property="og:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
+高级语言写就的程序如何跑起来，编译器上的build命令其实干了四件事：
 
-差分格式构造步骤：
-确定基架点：根据这一点需要使用的点，根据计算量、精度确定。
-写成待定系数形式
-利用泰勒展开：把用到的每个点 都在要构造格式的那点进行泰勒展开。
-最好保留截断误差的主项，用于判定精度等。
+预处理 （文本文件-&amp;gt;文件文件）
+编译   （文本文件-&amp;gt;文本文件）
+汇编   （文本文件-&amp;gt;二进制文件）
+链接
 
+文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。二进制文件：编码格式自由的二进制文件。
 
-截断误差精度：一个格式的误差随着微量趋近于零，整体误差趋近于零的速度阶数。精度不能代表误差大小，因为误差前面还有系数。当网格间距趋近于零时">
-<meta property="og:updated_time" content="2016-11-22T09:27:07.992Z">
+今天">
+<meta property="og:updated_time" content="2016-11-26T04:24:55.852Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《计算流体力学-李新亮》笔记（3）-差分方法1-2">
+<meta name="twitter:title" content="打通思路之编译">
 <meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
+高级语言写就的程序如何跑起来，编译器上的build命令其实干了四件事：
 
-差分格式构造步骤：
-确定基架点：根据这一点需要使用的点，根据计算量、精度确定。
-写成待定系数形式
-利用泰勒展开：把用到的每个点 都在要构造格式的那点进行泰勒展开。
-最好保留截断误差的主项，用于判定精度等。
+预处理 （文本文件-&amp;gt;文件文件）
+编译   （文本文件-&amp;gt;文本文件）
+汇编   （文本文件-&amp;gt;二进制文件）
+链接
 
+文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。二进制文件：编码格式自由的二进制文件。
 
-截断误差精度：一个格式的误差随着微量趋近于零，整体误差趋近于零的速度阶数。精度不能代表误差大小，因为误差前面还有系数。当网格间距趋近于零时">
+今天">
 
 
 
@@ -151,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/26/打通思路之编译/"/>
 
 
 
 
 
-  <title> 《计算流体力学-李新亮》笔记（3）-差分方法1-2 | 航哥的小站 </title>
+  <title> 打通思路之编译 | 航哥的小站 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -288,7 +291,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/26/打通思路之编译/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="szhang">
@@ -312,7 +315,7 @@
             
             
               
-                《计算流体力学-李新亮》笔记（3）-差分方法1-2
+                打通思路之编译
               
             
           </h1>
@@ -325,8 +328,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表：</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-11-18T20:53:57+08:00">
-                2015-11-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-26T11:26:19+08:00">
+                2016-11-26
               </time>
             
 
@@ -339,21 +342,39 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新：</span>
-              <time title="更新：" itemprop="dateModified" datetime="2016-11-22T17:27:07+08:00">
-                2016-11-22
+              <time title="更新：" itemprop="dateModified" datetime="2016-11-26T12:24:55+08:00">
+                2016-11-26
               </time>
             
           </span>
 
 		  
           
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">专题：</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编译和链接/" itemprop="url" rel="index">
+                    <span itemprop="name">编译和链接</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/" itemprop="commentCount"></span>
+                <a href="/2016/11/26/打通思路之编译/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/打通思路之编译/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -363,7 +384,7 @@
 
           
           
-             <span id="/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/" class="leancloud_visitors" data-flag-title="《计算流体力学-李新亮》笔记（3）-差分方法1-2">
+             <span id="/2016/11/26/打通思路之编译/" class="leancloud_visitors" data-flag-title="打通思路之编译">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,29 +411,40 @@
       
         <blockquote class="blockquote-center"><p>版权声明：文章为博主原创，转载请注明出处。  </p>
 </blockquote>
+<p>高级语言写就的程序如何跑起来，编译器上的build命令其实干了四件事：</p>
 <ol>
-<li>差分格式构造步骤：<ul>
-<li>确定基架点：根据这一点需要使用的点，根据计算量、精度确定。</li>
-<li>写成待定系数形式</li>
-<li>利用泰勒展开：把用到的每个点 都在要构造格式的那点进行泰勒展开。</li>
-<li>最好保留截断误差的主项，用于判定精度等。</li>
-</ul>
-</li>
-<li>截断误差精度：一个格式的误差随着微量趋近于零，整体误差趋近于零的速度阶数。<br>精度不能代表误差大小，因为误差前面还有系数。当网格间距趋近于零时，高阶精度的格式的误差才小。<br>简单问题（线性格式）的精度可以通过泰勒展开获得。复杂问题（非线性格式）一般通过数值实验获得：通过不同密度的网格划分，可以得到一个定义的误差（某种范数）。<br>精度：网格足够精细，间距趋向于零。<br>分辨率：在粗网格 下，用于判定误差大小。</li>
-<li>假设差分方程精确，那么把微分方程的离散误差的负值放到微分方程的右侧，这么方程为精确逼近差分方程微分方程。<br>根据右侧截断误差主项的性质判断解的性质。    </li>
-<li>守恒型差分格式：<br>采用守恒型的微分方程，通量当成原始量那样采用泰勒展开等方法进行差分格式构造（但是注意的是，每个点的通量并不是这个点原始量计算得到的通量），因为如果确实是这个点的通量，那么构造的格式的精度很低。</li>
-<li>常系数线性格式都是守恒型的。</li>
-<li>紧致型格式：通过多个点值的组合逼近多个点导数值的组合。好处：用的点少；缺点：耦合</li>
-<li>时间离散方法：<ul>
-<li>独立离散：时空坐标系，空间离散只用某一层时间上的值</li>
-<li>耦合离散：提高精度、计算效率，空间离散采用不同时间层上的值<br>Crank-Nicolson格式，Lax-Wandrof格式，MacCormack格式</li>
-</ul>
-</li>
-<li>差分导数=微分导数+截断误差</li>
-<li>有效波数：$ \alpha = k*\Delta x $</li>
-<li>色散误差：不管快格式还是慢格式，波数越高-&gt;误差越大。快格式-一般波数越高，越快。<br>间断进行Fourier分析，由不同波数的波叠加，如果没有色散误差，传播速度不变。如果此时格式是快格式，所有波都比精确解快，但是高波数跑的更快，所以在波前震荡。<br>如果是慢格式，则波后震荡。</li>
-<li>FVS对通量分裂，FDS对Jacobi矩阵进行分裂</li>
+<li>预处理 （文本文件-&gt;文件文件）</li>
+<li>编译   （文本文件-&gt;文本文件）</li>
+<li>汇编   （文本文件-&gt;二进制文件）</li>
+<li>链接</li>
 </ol>
+<p>文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。<br>二进制文件：编码格式自由的二进制文件。</p>
+<hr>
+<p>今天不讲链接，只讲前三个功能，不求精细，但求思路连贯。<br>每个.cpp文件是一个编译单元，.h文件不是，编译器对每个编译单元分别处理。</p>
+<h2 id="1-预处理"><a href="#1-预处理" class="headerlink" title="1.预处理"></a>1.预处理</h2><ul>
+<li>展开宏定义：#define #undef</li>
+<li>处理预编译指令：#if #ifdef #ifndef #elif #else #endif</li>
+<li><code>递归</code>处理头文件：#include</li>
+<li>删除注释</li>
+<li>添加行号和文件名标识别，用于debug</li>
+</ul>
+<hr>
+<h2 id="2-编译"><a href="#2-编译" class="headerlink" title="2.编译"></a>2.编译</h2><ul>
+<li>前端（平台无关）<ol>
+<li>词法分析：形象点说就是扫描器，将字符识别为有意义的记号：关键字、标识符、字面量（数字、字符串）、操作符等，顺便将标示符放到符号表，数字、字符串放到文字表等，链接阶段要用。  </li>
+<li>语法分析：对每个表达式构造语法树-操作符在父节点上，左右操作数在左右孩子上。</li>
+<li>语义分析：语法对不代表这句话有意义，不过这阶段只能做静态语义分析，给每个语法数节点标上类型，静态类型检查、类型转换等都是在这个阶段完成。<br>看完数学之美会知道，自然语言处理已经放弃了语义分析这些传统方法，转而采用统计学方法，一大原因就是自然语言是上下文相关的，而人类发明的高级语言是上下文无关的。</li>
+<li>源代码优化：将语法树用 三地址码（ x = y <em>OP</em> z）等格式表达，容易做优化，优化的代码包括常量相加之类。</li>
+</ol>
+</li>
+<li>后端（平台相关）<ol>
+<li>汇编语言生成：将中间代码转化为汇编指令。</li>
+<li>汇编指令优化：比如用移位代替乘法等。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="3-汇编"><a href="#3-汇编" class="headerlink" title="3.汇编"></a>3.汇编</h2><p>  这项工作比较简单，将汇编指令转化为机器指令，参考汇编指令与机器指令对照表一对一翻译。<br>  最终获得的文件称为<strong>目标文件</strong>。</p>
 <blockquote class="blockquote-center"><p>做了点微小的工作，谢谢大家。   </p>
 </blockquote>
       
@@ -435,13 +467,19 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/编译/" rel="tag"># 编译</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/10/《计算流体力学-李新亮》笔记（2）-双曲型方程组/" rel="next" title="《计算流体力学-李新亮》笔记（2）-双曲型方程组">
-                <i class="fa fa-chevron-left"></i> 《计算流体力学-李新亮》笔记（2）-双曲型方程组
+              <a href="/2016/04/22/Flux-Vector-Splitting（FVS）-方法与-Flux-Difference-Splitting（FDS）的区别/" rel="next" title="Flux Vector Splitting（FVS） 方法与 Flux Difference Splitting（FDS）的区别">
+                <i class="fa fa-chevron-left"></i> Flux Vector Splitting（FVS） 方法与 Flux Difference Splitting（FDS）的区别
               </a>
             
           </div>
@@ -450,8 +488,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/11/20/《计算流体力学-李新亮》笔记（4）-差分方法3/" rel="prev" title="《计算流体力学-李新亮》笔记（4）-差分方法3">
-                《计算流体力学-李新亮》笔记（4）-差分方法3 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/20/研究生阶段工作介绍/" rel="prev" title="研究生阶段工作总结">
+                研究生阶段工作总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -467,10 +505,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/"
-     data-title="《计算流体力学-李新亮》笔记（3）-差分方法1-2"
+        <div class="ds-share flat" data-thread-key="2016/11/26/打通思路之编译/"
+     data-title="打通思路之编译"
      data-content=""
-     data-url="http://yoursite.com/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/">
+     data-url="http://yoursite.com/2016/11/26/打通思路之编译/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -497,8 +535,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/"
-           data-title="《计算流体力学-李新亮》笔记（3）-差分方法1-2" data-url="http://yoursite.com/2015/11/18/《计算流体力学-李新亮》笔记（3）-差分方法1-2/">
+      <div class="ds-thread" data-thread-key="2016/11/26/打通思路之编译/"
+           data-title="打通思路之编译" data-url="http://yoursite.com/2016/11/26/打通思路之编译/">
       </div>
     
   </div>
@@ -522,8 +560,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -624,6 +671,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-预处理"><span class="nav-number">1.</span> <span class="nav-text">1.预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-编译"><span class="nav-number">2.</span> <span class="nav-text">2.编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-汇编"><span class="nav-number">3.</span> <span class="nav-text">3.汇编</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
