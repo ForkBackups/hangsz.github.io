@@ -88,10 +88,10 @@
 
 可执行文件格式可执行文件格式主要有两种：
 
-PE(portable Executable) Windows下。
-ELF(Executable Linkable Format ) Linux下。
+PE ( Portable Executable ) Windows下。
+ELF ( Executable Linkable Format ) Linux下。
 
-两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行文件看做同">
+两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行">
 <meta property="og:type" content="article">
 <meta property="og:title" content="打通思路之目标文件">
 <meta property="og:url" content="http://yoursite.com/2016/11/29/打通思路之目标文件/index.html">
@@ -100,21 +100,21 @@ ELF(Executable Linkable Format ) Linux下。
 
 可执行文件格式可执行文件格式主要有两种：
 
-PE(portable Executable) Windows下。
-ELF(Executable Linkable Format ) Linux下。
+PE ( Portable Executable ) Windows下。
+ELF ( Executable Linkable Format ) Linux下。
 
-两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行文件看做同">
-<meta property="og:updated_time" content="2016-11-29T13:00:26.290Z">
+两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行">
+<meta property="og:updated_time" content="2016-11-29T13:40:12.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打通思路之目标文件">
 <meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
 可执行文件格式可执行文件格式主要有两种：
 
-PE(portable Executable) Windows下。
-ELF(Executable Linkable Format ) Linux下。
+PE ( Portable Executable ) Windows下。
+ELF ( Executable Linkable Format ) Linux下。
 
-两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行文件看做同">
+两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行">
 
 
 
@@ -330,7 +330,7 @@ ELF(Executable Linkable Format ) Linux下。
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新：</span>
-              <time title="更新：" itemprop="dateModified" datetime="2016-11-29T21:00:26+08:00">
+              <time title="更新：" itemprop="dateModified" datetime="2016-11-29T21:40:12+08:00">
                 2016-11-29
               </time>
             
@@ -401,54 +401,81 @@ ELF(Executable Linkable Format ) Linux下。
 </blockquote>
 <h2 id="可执行文件格式"><a href="#可执行文件格式" class="headerlink" title="可执行文件格式"></a>可执行文件格式</h2><p>可执行文件格式主要有两种：</p>
 <ul>
-<li>PE(portable Executable) Windows下。</li>
-<li>ELF(Executable Linkable Format ) Linux下。</li>
+<li><strong>PE</strong> ( Portable Executable ) Windows下。</li>
+<li><strong>ELF</strong> ( Executable Linkable Format ) Linux下。</li>
 </ul>
 <p>两者都是COFF(Common File Format)格式的变种。<br>由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行文件看做同一种类型的文件。<br>Linux下，统称为ELF文件。</p>
 <hr>
-<h2 id="ELF文件分类"><a href="#ELF文件分类" class="headerlink" title="ELF文件分类"></a>ELF文件分类</h2><p>ELF文件主要分类：</p>
-<p>| ELF文件类型 | 说明 | 实例|<br>| <code>可重定位文件(Relocatable File)</code>   | 可用于链接为可执行文件或共享目标文件| Linux .o, Windows .obj |<br>| 可执行文件(Executable File)     | 可以直接执行   | Linux 无拓展名, Windows .exe|<br>| 共享目标文件(Shared Object File)   | 可链接为新目标文件；动态链接器将之与可执行文件结合| Linux .so, Windows .dll|</p>
+<h2 id="ELF文件分类"><a href="#ELF文件分类" class="headerlink" title="ELF文件分类"></a>ELF文件分类</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">ELF文件类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>可重定位文件(Relocatable File)</code></td>
+<td style="text-align:center">可用于链接为可执行文件或共享目标文件</td>
+<td style="text-align:center">Linux .o, Windows .obj</td>
+</tr>
+<tr>
+<td style="text-align:center">可执行文件(Executable File)</td>
+<td style="text-align:center">可以直接执行</td>
+<td style="text-align:center">Linux 无拓展名, Windows .exe</td>
+</tr>
+<tr>
+<td style="text-align:center">共享目标文件(Shared Object File)</td>
+<td style="text-align:center">可链接为新目标文件；动态链接器将之与可执行文件结合</td>
+<td style="text-align:center">Linux .so, Windows .dll</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="ELF文件结构"><a href="#ELF文件结构" class="headerlink" title="ELF文件结构"></a>ELF文件结构</h2><p>下表只包含主要段，每个段基本上都有独特的数据结构定义。</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">ELF Header(文件头，说明存储方式、版本、运行平台，程序头入口地址和长度，段表的位置、数量和长度)</th>
+<th style="text-align:left">ELF文件部分段</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">.text(代码段，机器指令流)</td>
+<td style="text-align:left"><code>ELF Header</code> 文件头，说明存储方式、版本、运行平台，程序头入口地址和长度，段表的位置、数量和长度</td>
 </tr>
 <tr>
-<td style="text-align:center">.data(数据段，初始化的全局变量、局部静态变量）</td>
+<td style="text-align:left"><code>.text</code> 代码段，机器指令流</td>
 </tr>
 <tr>
-<td style="text-align:center">.rodata(只读数据段)，放置只读变量和字符串常量</td>
+<td style="text-align:left"><code>.data</code> 数据段，初始化的全局变量、局部静态变量</td>
 </tr>
 <tr>
-<td style="text-align:center">.BSS(存放初始化的全局变量和局部静态变量，但由于强弱符号特性，未初始化全局变量有时并不放这里)</td>
+<td style="text-align:left"><code>.rodata</code> 只读数据段，放置只读变量和字符串常量</td>
 </tr>
 <tr>
-<td style="text-align:center">.comment(编译器版本信息)</td>
+<td style="text-align:left"><code>.BSS</code> 存放初始化的全局变量和局部静态变量，但由于强弱符号特性，未初始化全局变量有时并不放这里</td>
 </tr>
 <tr>
-<td style="text-align:center">.strtab(字符串表，变量的名字等各种字符串)</td>
+<td style="text-align:left"><code>.comment</code> 编译器版本信息</td>
 </tr>
 <tr>
-<td style="text-align:center">.shstrtab(段名表，每个段的名字)</td>
+<td style="text-align:left"><code>.strtab</code> 字符串表，变量的名字等各种字符串</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>Section Table</code>(段表，头文件之后最重要的部分，存储各段的段名-在段名表的偏移，段的长度、偏移，读写权限等)</td>
+<td style="text-align:left"><code>.shstrtab</code> 段名表，每个段的名字</td>
 </tr>
 <tr>
-<td style="text-align:center">.symtab(符号表，最重要的是全局符号：函数和全局变量信息，符号名（字符串表偏移）、类型、值（目标文件中指在代码段或数据段偏移，可执行文件中指虚拟地址）)</td>
+<td style="text-align:left"><code>Section Table</code> 段表，头文件之后最重要的部分，存储各段的段名-在段名表的偏移，段的长度、偏移，读写权限等</td>
 </tr>
 <tr>
-<td style="text-align:center">.rel.text(重定位表，代码段使用了引用了其他编译单元的全局符号，链接时需要给出这些地址)</td>
+<td style="text-align:left"><code>.symtab</code> 符号表，最重要的是全局符号：函数和全局变量信息，符号名（字符串表偏移）、类型、值（目标文件中指在代码段或数据段偏移，可执行文件中指虚拟地址)</td>
 </tr>
 <tr>
-<td style="text-align:center">.rel.data(重定位表，数据段使用了引用了其他编译单元的全局符号，链接时需要给出这些地址)</td>
+<td style="text-align:left"><code>.rel.text</code> 重定位表，代码段使用了引用了其他编译单元的全局符号，链接时需要给出其地址</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.rel.data</code> 重定位表，数据段使用了引用了其他编译单元的全局符号，链接时需要给出其地址</td>
 </tr>
 </tbody>
 </table>
