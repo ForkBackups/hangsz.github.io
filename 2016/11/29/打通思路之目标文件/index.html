@@ -93,7 +93,7 @@ ELF ( Executable Linkable Format ) Linux下。
 
 两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="打通思路之目标文件">
+<meta property="og:title" content="打通思路之编译与链接(2)-目标文件">
 <meta property="og:url" content="http://yoursite.com/2016/11/29/打通思路之目标文件/index.html">
 <meta property="og:site_name" content="航哥的小站">
 <meta property="og:description" content="版权声明：文章为博主原创，转载请注明出处。  
@@ -104,9 +104,9 @@ PE ( Portable Executable ) Windows下。
 ELF ( Executable Linkable Format ) Linux下。
 
 两者都是COFF(Common File Format)格式的变种。由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行">
-<meta property="og:updated_time" content="2016-12-02T05:54:17.060Z">
+<meta property="og:updated_time" content="2016-12-02T06:34:49.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="打通思路之目标文件">
+<meta name="twitter:title" content="打通思路之编译与链接(2)-目标文件">
 <meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
 
 可执行文件格式可执行文件格式主要有两种：
@@ -148,7 +148,7 @@ ELF ( Executable Linkable Format ) Linux下。
 
 
 
-  <title> 打通思路之目标文件 | 航哥的小站 </title>
+  <title> 打通思路之编译与链接(2)-目标文件 | 航哥的小站 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -303,7 +303,7 @@ ELF ( Executable Linkable Format ) Linux下。
             
             
               
-                打通思路之目标文件
+                打通思路之编译与链接(2)-目标文件
               
             
           </h1>
@@ -330,7 +330,7 @@ ELF ( Executable Linkable Format ) Linux下。
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新：</span>
-              <time title="更新：" itemprop="dateModified" datetime="2016-12-02T13:54:17+08:00">
+              <time title="更新：" itemprop="dateModified" datetime="2016-12-02T14:34:49+08:00">
                 2016-12-02
               </time>
             
@@ -372,7 +372,7 @@ ELF ( Executable Linkable Format ) Linux下。
 
           
           
-             <span id="/2016/11/29/打通思路之目标文件/" class="leancloud_visitors" data-flag-title="打通思路之目标文件">
+             <span id="/2016/11/29/打通思路之目标文件/" class="leancloud_visitors" data-flag-title="打通思路之编译与链接(2)-目标文件">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -399,14 +399,14 @@ ELF ( Executable Linkable Format ) Linux下。
       
         <blockquote class="blockquote-center"><p>版权声明：文章为博主原创，转载请注明出处。  </p>
 </blockquote>
-<h2 id="可执行文件格式"><a href="#可执行文件格式" class="headerlink" title="可执行文件格式"></a>可执行文件格式</h2><p>可执行文件格式主要有两种：</p>
+<h3 id="可执行文件格式"><a href="#可执行文件格式" class="headerlink" title="可执行文件格式"></a>可执行文件格式</h3><p>可执行文件格式主要有两种：</p>
 <ul>
 <li><strong>PE</strong> ( Portable Executable ) Windows下。</li>
 <li><strong>ELF</strong> ( Executable Linkable Format ) Linux下。</li>
 </ul>
 <p>两者都是COFF(Common File Format)格式的变种。<br>由于目标文件一般与可执行文件采用相同的格式存储，所以广义上将目标文件与可执行文件看做同一种类型的文件。<br>Linux下，统称为ELF文件，或者统称为目标文件</p>
 <hr>
-<h2 id="ELF文件分类"><a href="#ELF文件分类" class="headerlink" title="ELF文件分类"></a>ELF文件分类</h2><table>
+<h3 id="ELF文件分类"><a href="#ELF文件分类" class="headerlink" title="ELF文件分类"></a>ELF文件分类</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">ELF文件类型</th>
@@ -437,7 +437,7 @@ ELF ( Executable Linkable Format ) Linux下。
 </tbody>
 </table>
 <hr>
-<h2 id="ELF文件结构"><a href="#ELF文件结构" class="headerlink" title="ELF文件结构"></a>ELF文件结构</h2><p>下表只包含主要段，每个段基本上都有独特的数据结构定义。</p>
+<h3 id="ELF文件结构"><a href="#ELF文件结构" class="headerlink" title="ELF文件结构"></a>ELF文件结构</h3><p>下表只包含主要段，每个段基本上都有独特的数据结构定义。</p>
 <table>
 <thead>
 <tr>
@@ -518,8 +518,8 @@ ELF ( Executable Linkable Format ) Linux下。
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/26/打通思路之编译/" rel="next" title="打通思路之编译">
-                <i class="fa fa-chevron-left"></i> 打通思路之编译
+              <a href="/2016/11/26/打通思路之编译/" rel="next" title="打通思路之编译与链接(1)-编译">
+                <i class="fa fa-chevron-left"></i> 打通思路之编译与链接(1)-编译
               </a>
             
           </div>
@@ -528,8 +528,8 @@ ELF ( Executable Linkable Format ) Linux下。
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/02/打通思路之静态链接/" rel="prev" title="打通思路之静态链接">
-                打通思路之静态链接 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/02/打通思路之静态链接/" rel="prev" title="打通思路之编译与链接(3)-静态链接">
+                打通思路之编译与链接(3)-静态链接 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -546,7 +546,7 @@ ELF ( Executable Linkable Format ) Linux下。
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2016/11/29/打通思路之目标文件/"
-     data-title="打通思路之目标文件"
+     data-title="打通思路之编译与链接(2)-目标文件"
      data-content=""
      data-url="http://yoursite.com/2016/11/29/打通思路之目标文件/">
   <div class="ds-share-inline">
@@ -576,7 +576,7 @@ ELF ( Executable Linkable Format ) Linux下。
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/11/29/打通思路之目标文件/"
-           data-title="打通思路之目标文件" data-url="http://yoursite.com/2016/11/29/打通思路之目标文件/">
+           data-title="打通思路之编译与链接(2)-目标文件" data-url="http://yoursite.com/2016/11/29/打通思路之目标文件/">
       </div>
     
   </div>
@@ -638,7 +638,7 @@ ELF ( Executable Linkable Format ) Linux下。
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -721,7 +721,7 @@ ELF ( Executable Linkable Format ) Linux下。
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#可执行文件格式"><span class="nav-number">1.</span> <span class="nav-text">可执行文件格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件分类"><span class="nav-number">2.</span> <span class="nav-text">ELF文件分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件结构"><span class="nav-number">3.</span> <span class="nav-text">ELF文件结构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#可执行文件格式"><span class="nav-number">1.</span> <span class="nav-text">可执行文件格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ELF文件分类"><span class="nav-number">2.</span> <span class="nav-text">ELF文件分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ELF文件结构"><span class="nav-number">3.</span> <span class="nav-text">ELF文件结构</span></a></li></ol></div>
             
 
           </div>
