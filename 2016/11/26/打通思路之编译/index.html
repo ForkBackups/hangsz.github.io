@@ -112,7 +112,7 @@
 文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。二进制文件：编码格式自由的二进制文件。
 
 今天">
-<meta property="og:updated_time" content="2016-12-02T06:22:12.191Z">
+<meta property="og:updated_time" content="2016-12-02T06:28:45.050Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打通思路之编译">
 <meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
@@ -342,7 +342,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新：</span>
-              <time title="更新：" itemprop="dateModified" datetime="2016-12-02T14:22:12+08:00">
+              <time title="更新：" itemprop="dateModified" datetime="2016-12-02T14:28:45+08:00">
                 2016-12-02
               </time>
             
@@ -421,7 +421,7 @@
 <p>文本文件：数字、字母等都用指定编码如ASCII码/UNICODE码等方式编码并存储的二进制文件。<br>二进制文件：编码格式自由的二进制文件。</p>
 <hr>
 <p>今天不讲链接，只讲前三个功能，不求精细，但求思路连贯。<br>每个.cpp文件是一个编译单元，.h文件不是，编译器对每个编译单元分别处理。</p>
-<h2 id="1-预处理"><a href="#1-预处理" class="headerlink" title="1.预处理"></a>1.预处理</h2><ul>
+<h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h2><ul>
 <li>展开宏定义：#define #undef</li>
 <li>处理预编译指令：#if #ifdef #ifndef #elif #else #endif</li>
 <li><code>递归</code>处理头文件：#include</li>
@@ -429,7 +429,7 @@
 <li>添加行号和文件名标识别，用于debug</li>
 </ul>
 <hr>
-<h2 id="2-编译"><a href="#2-编译" class="headerlink" title="2.编译"></a>2.编译</h2><ul>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><ul>
 <li>前端（平台无关）<ol>
 <li>词法分析：形象点说就是扫描器，将字符识别为有意义的记号：关键字、标识符、字面量（数字、字符串）、操作符等，顺便将标示符放到符号表，数字、字符串放到文字表等，链接阶段要用。  </li>
 <li>语法分析：对每个表达式构造语法树-操作符在父节点上，左右操作数在左右孩子上。</li>
@@ -444,7 +444,7 @@
 </li>
 </ul>
 <hr>
-<h2 id="3-汇编"><a href="#3-汇编" class="headerlink" title="3.汇编"></a>3.汇编</h2><p>  这项工作比较简单，将汇编指令转化为机器指令，参考汇编指令与机器指令对照表一对一翻译。<br>  最终获得的文件称为<strong>目标文件</strong>。</p>
+<h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h2><p>  这项工作比较简单，将汇编指令转化为机器指令，参考汇编指令与机器指令对照表一对一翻译。<br>  最终获得的文件称为<strong>目标文件</strong>。</p>
 <hr>
 <p><strong>参考书籍：</strong><br> 1.《程序员的自我修养》</p>
 <blockquote class="blockquote-center"><p>做了点微小的工作，谢谢大家。   </p>
@@ -683,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-预处理"><span class="nav-number">1.</span> <span class="nav-text">1.预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-编译"><span class="nav-number">2.</span> <span class="nav-text">2.编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-汇编"><span class="nav-number">3.</span> <span class="nav-text">3.汇编</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#预处理"><span class="nav-number">1.</span> <span class="nav-text">预处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译"><span class="nav-number">2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#汇编"><span class="nav-number">3.</span> <span class="nav-text">汇编</span></a></li></ol></div>
             
 
           </div>
