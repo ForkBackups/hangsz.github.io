@@ -102,7 +102,7 @@
 
 静态链接：加载前进行，各个编译单元生成可重定位目标文件（.a或者.obj）后，将它们组合成可执行文件。
 动态链接：加载时进行，对于共享目标文件（.so或者.obj），静态链接阶段不处理这些文件，只是在生成的可执行文">
-<meta property="og:updated_time" content="2016-12-03T13:23:55.426Z">
+<meta property="og:updated_time" content="2016-12-03T14:04:46.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打通思路之编译与链接(3)-静态链接">
 <meta name="twitter:description" content="版权声明：文章为博主原创，转载请注明出处。  
@@ -327,7 +327,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新：</span>
-              <time title="更新：" itemprop="dateModified" datetime="2016-12-03T21:23:55+08:00">
+              <time title="更新：" itemprop="dateModified" datetime="2016-12-03T22:04:46+08:00">
                 2016-12-03
               </time>
             
@@ -400,7 +400,7 @@
 <p>链接分两种：</p>
 <ul>
 <li>静态链接：加载前进行，各个编译单元生成可重定位目标文件（.a或者.obj）后，将它们组合成可执行文件。</li>
-<li>动态链接：加载时进行，对于共享目标文件（.so或者.obj），静态链接阶段不处理这些文件，只是在生成的可执行文件中添加.interp段和.dynamic等段，其中记录关于动态链接器地址以及依赖的共享目标文件的重定位和符号表等信息。</li>
+<li>动态链接：加载时进行，对于共享目标文件（.so或者.obj），静态链接阶段不处理这些文件，只是在生成的可执行文件中添加.interp段、.dynamic和.dynsym等段，其中记录关于动态链接器地址、依赖的共享目标文件与重定位信息和符号表等信息。</li>
 </ul>
 <blockquote>
 <p>注:加载的意思就是创建进程，开始运行之前。</p>
